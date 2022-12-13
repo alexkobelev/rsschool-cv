@@ -1,10 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/javascript.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CV</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="header">
+    <div class="container header-container">
+      <nav class="main-nav">
+        <ul class="list nav-list">
+          <li><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#summary" class="nav-link">Summary</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#work-experience" class="nav-link">Experience</a></li>
+          <li><a href="#languages" class="nav-link">Languages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+
+  <main class="main">
+    <div class="container main-container grid">
+
+      <section class="section-photo-and-name">
+        <img class="photo" src="assets/img/photo.webp" alt="Photo of Alexander Kobelev">
+        <div class="photo-and-profession">
+          <h1 class="heading-primary">Alexander Kobelev</h1>
+          <p class="job-title">Front-end Developer</p>
+        </div>
+      </section>
+
+      <section class="section-contacts" id="contacts">
+        <h2 class="heading-secondary">Contacts</h2>
+        <ul class="list contacts-list">
+          <li>
+            <a href="https://github.com/alexkobelev" title="Github">Github: alexkobelev</a>
+          </li>
+          <li>
+            <a href="https://telegram.me/alex_kobelev" title="Telegram">Telegram: @alex_kobelev</a>
+          </li>
+          <li>
+            <a href="https://discord.gg/PqWGNNzy" title="Discord">Discord: alex_kobelev#4391</a>
+          </li>
+          <li>
+            <a href="mailto:a.p.kobelev@gmail.com" title="E-mail">E-mail: a.p.kobelev@gmail.com</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-summary" id="summary">
+        <h2 class="heading-secondary">Summary</h2>
+        <p class="about-me">I switched career path of Navigation Officer to Front-end Developer.<br>
+          My past experience in another engineering fields sets me apart from other newcomers.<br>
+          Cutting edge technologies inspire me.
+          I want their application in real world will improves people's lifes and helps business to grow.</p>
+        <ul class="list my-strong-sides-list">I have experience in:
+          <li>team management</li>
+          <li>working in an extremely stressful situations</li>
+          <li>making responsible decisions in situations when people's lives are at stake</li>
+          <li>fast recognition of situations when the help of senior colleagues is required</li>
+          <li>work in a multicultural environment</li>
+          <li>quick grasping of new technologies</li>
+        </ul>
+      </section>
+
+      <section class="section-skills" id="skills">
+        <h2 class="heading-secondary">Skills</h2>
+        <u class="list">
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Git</li>
+        </u>
+      </section>
+
+      <section class="section-code-example" id="code-example">
+        <h2 class="heading-secondary">Code Example</h2>
+        <code>
+                  function explode(s) {
+                    let str = '';
+                    let i = 0;
+                  
+                    while ( i < s.length) {
+                      str = str + s[i].repeat(Number(s[i]));
+                      i += 1;
+                    }
+                    return str;
+                  }
+                </code>
+      </section>
+
+      <section class="section-education" id="education">
+        <h2 class="heading-secondary">Education</h2>
+        <p>Maritime State University named after G.I. Nevelskoy</p>
+        <p>Master's degree of Navigation</p>
+      </section>
+
+
+      <section class="section-work-experience" id="work-experience">
+        <h2 class="heading-secondary">Work Experience</h2>
+        <h3 class="heading-tertiary">2012 - 2021</h3>
+        <p>PAO "Sovcomflot'</p>
+        <p>Navigation Officer</p>
+      </section>
+
+      <section class="section-languages" id="languages">
+        <h2 class="heading-secondary">Languages</h2>
+        <p class="text">Russian (Native)</p>
+        <p class="text">English (B2)</p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="github-link">
+        <a href="https://github.com/alexkobelev" title="Github">
+          <img class="footer-logo github-logo" src="assets/svg/github_logo.svg" alt="Github logo">
+        </a>
+      </div>
+      <p>&#169; 2022</p>
+      <div class="rs-school-link">
+        <a href="https://rs.school/js/">
+          <img class="footer-logo rs-school-logo" src="assets/svg/rs_school_logo.svg" alt="RS School logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
