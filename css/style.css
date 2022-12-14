@@ -71,16 +71,18 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
   font-family: "Ubuntu", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   color: #222222;
+
   background-color: #fafafa;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .header {
@@ -96,9 +98,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 0 36px;
+  margin: 96px auto;
   row-gap: 48px;
   column-gap: 96px;
-  margin: 96px auto;
 }
 
 .list {
@@ -129,6 +131,7 @@ body {
   justify-content: center;
   gap: 48px;
   padding: 24px;
+
   background-color: #dddddd;
 }
 
@@ -138,17 +141,18 @@ body {
   font-size: 24px;
   font-weight: 300;
   color: #222222;
+
   transition: all 0.5s;
 }
 
 .nav-link:hover,
 .nav-link:active {
-  color: #dddddd;
   padding: 12px;
-  border-radius: 6px;
+  color: #dddddd;
   background-color: #222222;
-  cursor: pointer;
+  border-radius: 6px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 /* NAME AND PHOTO SECTION */
@@ -161,14 +165,15 @@ body {
 }
 
 .name-and-profession {
-  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  letter-spacing: 2px;
   padding: 36px;
+  width: 100%;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
   border-bottom: 1px solid #222222;
   border-top: 1px solid #222222;
 }
@@ -199,23 +204,24 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+  padding: 6px 12px;
 
   text-decoration: none;
   color: #222222;
 
-  padding: 6px 12px;
   border: 1px solid #222222;
   border-radius: 9px;
+
   transition: all 0.25s;
 }
 
 .contacts-list-link:active,
 .contacts-list-link:hover {
-  background-color: #222222;
   color: #dddddd;
-  cursor: pointer;
+  background-color: #222222;
   border-radius: 9px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .lab,
@@ -226,7 +232,6 @@ body {
 /* SUMMARY */
 
 .my-strong-sides-list {
-  position: relative;
   font-size: 18px;
 }
 
@@ -259,10 +264,11 @@ body {
 .code-example-title {
   margin-bottom: 24px;
 }
+
 .code-example {
-  background-color: #2d2d2d;
-  font-size: 14px;
   padding: 18px 36px;
+  font-size: 14px;
+  background-color: #2d2d2d;
   border-radius: 9px;
 }
 
