@@ -1,7 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  </head>
-  <body>
-  </body>
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/javascript.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CV</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="header">
+    <div class="container header-container">
+      <nav class="main-nav">
+        <ul class="list nav-list">
+          <li><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#summary" class="nav-link">Summary</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#work-experience" class="nav-link">Experience</a></li>
+          <li><a href="#languages" class="nav-link">Languages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+
+  <main class="main">
+    <div class="container main-container grid">
+
+
+      <!-- NAME -->
+
+      <section class="section-name">
+        <div class="name-and-profession">
+          <h1 class="heading-primary">Alexander Kobelev</h1>
+          <p class="job-title">Front-End Developer</p>
+        </div>
+      </section>
+
+      <!-- PHOTO -->
+
+      <section class="section-photo">
+        <h2 class="photo-heading">
+          <img class="photo" src="assets/img/photo.webp" alt="Photo of Alexander Kobelev">
+        </h2>
+      </section>
+
+      <!-- CONTACTS -->
+
+      <section class="section-contacts" id="contacts">
+        <h2 class="heading-secondary">Contacts</h2>
+        <ul class="list contacts-list">
+          <li>
+            <a class="contacts-list-link" href="https://telegram.me/alex_kobelev" title="Telegram">
+              <i class="lab la-telegram"></i>
+              <p>@alex_kobelev</p>
+            </a>
+          </li>
+          <li>
+            <a class="contacts-list-link" href="https://github.com/alexkobelev" title="Github">
+              <i class="lab la-github"></i>
+              <p>alexkobelev</p>
+            </a>
+          </li>
+          <li>
+            <a class="contacts-list-link" href="https://discord.gg/PqWGNNzy" title="Discord">
+              <i class="lab la-discord"></i>
+              <p>alex_kobelev#4391</p>
+            </a>
+          </li>
+          <li>
+            <a class="contacts-list-link" href="mailto:a.p.kobelev@gmail.com" title="E-mail">
+              <i class="las la-envelope"></i>
+              <p>a.p.kobelev@gmail.com</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- SUMMARY -->
+
+      <section class="section-summary" id="summary">
+        <h2 class="heading-secondary">Summary</h2>
+        <p class="about-me">I switched my career path of Navigation Officer to Front-End
+          Developer. Cutting
+          edge
+          technologies inspire me. I hope my past experience in other engineering fields will help me improve people
+          lifes by web development.</p>
+        <h3 class="heading-tertiary">I have experience in:</h3>
+        <ul class="list my-strong-sides-list">
+          <li><i class="las la-check"></i>Team management</li>
+          <li><i class="las la-check"></i>Working in extremely stressful situations</li>
+          <li><i class="las la-check"></i>Making responsible decisions in situations when people's lives are at stake
+          </li>
+          <li><i class="las la-check"></i>Fast recognition of situations when the help of senior colleagues is required
+          </li>
+          <li><i class="las la-check"></i>Working in a multicultural environment</li>
+          <li><i class="las la-check"></i>Quick grasping of new technologies</li>
+        </ul>
+      </section>
+
+      <!-- SKILLS -->
+
+      <section class="section-skills" id="skills">
+        <h2 class="heading-secondary">Skills</h2>
+        <ul class="list skills-list">
+          <li class="skills-list-item">
+            <i class="lab la-html5"></i>
+            <p>HTML</p>
+          </li>
+          <li class="skills-list-item">
+            <i class="lab la-css3-alt"></i>
+            <p>CSS</p>
+          </li>
+          <li class="skills-list-item">
+            <i class="lab la-js-square"></i>
+            <p>JavaScript</p>
+          </li>
+          <li class="skills-list-item">
+            <i class="lab la-git"></i>
+            <p>Git</p>
+          </li>
+          <li class="skills-list-item">
+            <i class="lab la-github"></i>
+            <p>Github</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- CODE EXAMPLE -->
+
+      <section class="section-code-example" id="code-example">
+        <h2 class="heading-secondary">Code Example</h2>
+        <p class="code-example-title">Codewars Cata "Digits explosion"</p>
+        <div class="code-example">
+          <code class="code-example-text">
+        <span class="code-color-blue">function</span> <span class="code-color-green">explode</span>(<span class="code-color-orange">s</span>) {<br>
+        &nbsp;&nbsp;<span class="code-color-blue">let</span> str <span class="code-color-red">=</span> <span class="code-color-yellow">''</span>;<br>
+        &nbsp;&nbsp;<span class="code-color-blue">let</span> i <span class="code-color-red">=</span> <span class="code-color-violet">0</span>;<br>
+        &nbsp;&nbsp;<span class="code-color-red">while</span> ( i <span class="code-color-red">&lt;</span> <span class="code-color-blue">s</span>.<span class="code-color-blue">length</span>) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;str <span class="code-color-red">=</span> str <span class="code-color-red">+</span> s[i].<span class="code-color-green">repeat</span>(<span class="code-color-green">Number</span>(s[i]));<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;i <span class="code-color-red">+=</span> <span class="code-color-violet">1</span>;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;<span class="code-color-red">return</span> str;<br>
+        }
+        </code>
+        </div>
+      </section>
+
+      <!-- LANGUAGES -->
+
+      <section class="section-languages" id="languages">
+        <h2 class="heading-secondary">Languages</h2>
+        <ul class="list lang-list">
+          <li class="lang-list-item">
+            <p class="lang-flag">🇷🇺</p>
+            <p class="lang-text"> Russian (Native)</p>
+          </li>
+          <li class="lang-list-item">
+            <p class="lang-flag">🇬🇧</p>
+            <p class="lang-text"> English (B2)</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- WORK EXPIRIENCE -->
+
+      <section class="section-work-experience" id="work-experience">
+        <h2 class="heading-secondary">Work Experience</h2>
+        <div class="work-history">
+          <div class="work-hitory-block">
+            <h3 class="heading-tertiary">2014 - 2021</h3>
+            <p>PAO "Sovcomflot"</p>
+            <p>Navigation Officer</p>
+          </div>
+          <div class="work-hitory-block">
+            <h3 class="heading-tertiary">2012 - 2014</h3>
+            <p>PAO "Sovcomflot"</p>
+            <p>Ordinary Seaman</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+
+      <section class="section-education" id="education">
+        <h2 class="heading-secondary">Education</h2>
+        <p>Maritime State University named after G.I. Nevelskoy</p>
+        <p>Master's degree of Navigation</p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <a class="footer-link" href="https://github.com/alexkobelev" title="Github">
+        <img class="footer-logo github-logo" src="assets/svg/github_logo.svg" alt="Github logo">
+      </a>
+      <p>&#169; 2022 by Alexander Kobelev</p>
+      <a class="footer-link" href="https://rs.school/js/" title="RS School">
+        <img class="footer-logo rs-school-logo" src="assets/svg/rs_school_logo.svg" alt="RS School logo">
+      </a>
+
+    </div>
+  </footer>
+
+</body>
+
 </html>
+
